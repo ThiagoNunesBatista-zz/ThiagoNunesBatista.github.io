@@ -1,0 +1,48 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #010CFF;
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100vw;
+}
+
+a > i {
+  color: #fff;
+  padding: 10px;
+}
+
+.identificationContainer {
+  margin: 1vh 1vw;
+  background-color: #0C5AE8;
+}
+
+/* Tablet */
+@media(min-width: 501px) and (max-width: 768px){
+  body {
+    background: pink;
+  }
+}
+
+/* Desktop */
+@media(min-width: 769px) and (max-width: 1200px) {
+  body {
+    background: red;
+  }
+}
+
+/* Widescreen */
+@media (min-width: 1201px) {
+  body {
+    background: orange;
+  }
+}

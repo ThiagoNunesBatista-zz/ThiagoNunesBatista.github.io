@@ -1,0 +1,70 @@
+.navbar {
+  text-align: center;
+  margin: auto;
+}
+.navbar h3 {
+  width: 100%;
+}
+
+.navbar ul, .navbar ul li, .navbar ul li a {
+  float: none;
+  margin: auto;
+}
+
+.navbar ul li a {
+  display: block;
+}
+
+.imgDiv1 {
+  float: none;
+  width: 100%;
+}
+
+.historyHotel {
+  float: none;
+  width:100%;
+  height: 600px;
+}
+
+.divIcon {
+  float: none;
+  width: 100%;
+}
+
+/* About Page */
+.aboutDiv {
+  float: none;
+  width: 100%;
+}
+
+.aboutDiv p, .aboutDiv h1 {
+  text-align: justify;
+}
+
+.aboutDiv img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.guestSayImg {
+  float: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.headerContact {
+  text-align: center;
+}
+
+form p {
+  text-align: center;
+}
+
+input.btn {
+  margin: 10px auto;
+}
+
+.divIconContact {
+  float: none; 
+  width: 100%;
+}

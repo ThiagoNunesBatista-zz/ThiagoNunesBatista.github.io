@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
 </head>
 <body>
 
@@ -26,38 +27,79 @@
 
 <section class="showcase">
   <h1>Hi, I'm Thiago Nunes Batista</h1>
-  <p>The One You Were Looking For Develop Web Applications</p>
-  <a class="btn" href="">Know More About Me</a>
+  <p>The One You Were Looking To Develop Your Web Applications</p>
+  <a class="btn" href="#personalPhotoSection">Know More About Me</a>
 </section>
 
+<section id="personalPhotoSection" class="personalPhotoSection">
+  <div class="personalPhotoBackground"></div>
+  
+  <div class="personalPhotoText">
+    
+    <div>
+      <h3><span>Who I</span> Am</h3>
+    
+      <p>I believe in constant self-improvement, where every day you are improving on something in your life. I have been studying web technologies for a while, especially Back End with NodeJS, after that, I started studying Front End with ReactJS and now I am looking to get a job and eventually do some freelance works.</p>
+    </div>
 
-<!-- <div class="grid-wrapper">
-  <img src="https://avatars0.githubusercontent.com/u/41683571?v=4" alt="Thiago Nunes Batista photo">
-  <div class="identificationContainer">
-    <h1>Hello, I'm Thiago Nunes Batista</h1>
-    <p>And I'm Improving to Become a Back End Developer.</p>
-    <a href="https://www.linkedin.com/in/thiagonunesbatista/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-    <a href="https://github.com/ThiagoNunesBatista/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-</div>
-</div>
+    <div>
+      <h3><span>What I</span> Like</h3>
+      <ul>
+        <li>Films/Series Based/Inspired on Real Facts</li>
+        <li>Financial Investments</li>
+        <li>Grêmio FBPA</li>
+        <li>Reading Habit</li>
+        <li>Web Technologies</li>
+      </ul>
+    </div>
 
-<div class="grid-skills">
-  <h2>Skills</h2>
-  <div class="grid-skills-items">
-    <i class="fab fa-docker fa-3x"></i>
-    <i class="fab fa-git fa-3x"></i>
-    <i class="fab fa-js fa-3x"></i>
-    <i class="fab fa-linux fa-3x"></i>
-    <i class="fab fa-node-js fa-3x"></i>
-    <i class="fas fa-database fa-3x"></i>
+    <div>
+      <h3><span>Contact</span></h3>
+      <a href="https://www.linkedin.com/in/thiagonunesbatista/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a href="https://github.com/ThiagoNunesBatista/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+    </div>
+    
   </div>
-</div>
+</section>
+ 
+<div class="parallax"></div>
 
-<div class="about">
-  <h2>About</h2>
-  <p>I am computer science student At Universidade Federal de Pelotas - Brazil.</p>
-  <p>&hearts;JavaScript</p>
-</div> -->
+<section class="portfolio">
+  <h2>Portfolio From Courses</h2>
+  <p>Thank You For Your Teaching, Brad Traversy, I Really Appreciate Your Work.</p>
 
+    <div class="portfolioCardsGrid">
+      <div class="courseCard" onclick="openLink('./projectCourses/hotel')">
+        <img src="./images/projectCourse1.png" alt="">
+        <p>Website For A Small Hotel.</p>
+      </div>
+  
+    <div class="courseCard" onclick="openLink('./projectCourses/edgeLedger')">
+      <img src="./images/projectCourse2.png" alt="">
+      <p>Website For a Financial Company.</p>
+    </div>
+
+</section>
+
+<section class="skills">
+  <h3>Skills</h3>
+
+  <div class="skillsLogos">
+    <i class="fab fa-docker fa-6x"></i>
+    <i class="fab fa-git fa-6x"></i>
+    <i class="fab fa-js fa-6x"></i>
+    <i class="fab fa-linux fa-6x"></i>
+    <i class="fab fa-node fa-6x"></i>
+    <i class="fab fa-react fa-6x"></i>
+    <i class="fas fa-database fa-6x"></i>
+  </div>
+
+</section>
+
+<footer>
+  <p>Thiago Nunes Batista, 2020. The Site is Licensed Under MIT License. Source code in my GitHub</p>
+</footer>
+
+<script src="./javascript/openLink.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+/* Navbar */
+.navbar {
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.navbar ul li {
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  padding: 0.5rem;
+}
+
+.navbar ul li a {
+  border-radius: 0.5rem;
+}
+
+/* Showcase */
+.showcase {
+  height: 90vh;
+  padding: 0px 0.5rem;
+}
+
+.showcase h2 {
+  font-size: 3em;
+}
+
+/* What We Do */
+.whatText {
+  flex-direction: column;
+}
+
+/* Who We Are */
+.who {
+  flex-direction: column;
+  align-items: center;
+  height: 90rem;
+} 
+
+
+/* Our Clients */
+.clientsLogo {
+  text-align: center;
+}
+
+.clientsLogo img {
+  margin: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  padding: 1rem;
+}

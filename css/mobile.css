@@ -1,0 +1,18 @@
+/* Who I am */
+.personalPhotoSection {
+  flex-direction: column;
+  align-items: center;
+  height: 100rem;
+  overflow: auto;
+}
+
+.personalPhotoText {
+  padding: 2rem;
+}
+
+/* Course Portfolio */
+.portfolioCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+

@@ -1,0 +1,259 @@
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utilities */
+.greenSpan {
+  color: #93cb52;
+}
+
+.bgLight {
+  background: #f4f4f4;
+}
+
+.bgDark {
+  background: #333;
+}
+
+.bgDarkOverlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bgGreen {
+  background: #93cb52;
+}
+
+/* Navbar */
+.navbar {
+  position:sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.7rem 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  font-size: 1.7rem;
+  z-index: 1;
+}
+
+.navbar ul li {
+  margin-right: 1rem;
+}
+
+.flexLinks {
+  display: flex;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li a {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.navbar ul li a:hover {
+  background: #93cb52;
+}
+
+
+/* Showcase */
+.showcase {
+  background: url('../images/showcase.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  }
+  
+  .overlayShowcase {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0px 1rem;
+  }
+  
+  .showcase h2 {
+    font-size: 7rem;
+  }
+
+.btn {
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+/* What We Do */
+.what {
+  display: flex;
+  color: #333333;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.what > h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.item {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.item i {
+  padding: 1.3rem;
+  border-radius: 5rem;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.whatText {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+/* Who We Are */
+.who {
+  display: flex;
+  height: 43rem;
+  align-items:flex-start;
+}
+
+.who div {
+  flex: 1;
+}
+
+.whoImage {
+  width: 100%;
+  height: 100%;
+  background: url('../images/people.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.whoText {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+.whoText  {
+  align-items: flex-start;
+}
+
+.whoText h2:first-child {
+  font-size: 3rem;
+}
+
+.whoText h2 {
+  font-size: 1.8rem;
+}
+
+.whoText ul li {
+  border-bottom: 0.1rem dotted #444;
+  padding: 1rem 0rem;
+}
+
+.whoText ul {
+  list-style: none;
+}
+
+
+/* Our Clients Section Styling */
+.ourClients {
+  display: flex;
+  color: #333;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+.ourClients h2 {
+  font-size: 3.5rem;
+}
+
+.ourClients img {
+  width: 13rem;
+  margin: 0rem 3rem;
+}
+
+.clientsLogo {
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+/* Contact Us Form */
+.contactUs {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.containerForm {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formGroup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.formGroup label, .formGroup input, .formGroup textarea{
+  text-align: left;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.submitFormBtn {
+  padding: 1rem 2rem;
+  border: 0;
+  color: #fff;
+
+}
+
+/* Footer Styling */
+footer {
+  width:100%;
+  padding: 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+}

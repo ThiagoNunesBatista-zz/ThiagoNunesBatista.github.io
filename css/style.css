@@ -1,0 +1,158 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  text-align: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --primaryBoxColor: #0D9CFF;
+  --secondaryBoxColor: #21FAFF;
+}
+
+/* Utilities */
+.btn {
+  padding: 1.5rem;
+  background: blue;
+  color: #f4f4f4;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 100vh;
+  background: #0C54E8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.box {
+  height: 20vh;
+  width: 100vw;
+}
+
+.primaryBox {
+  background: var(--primaryBoxColor);
+  animation-name: primaryAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+.secondaryBox {
+  background: var(--secondaryBoxColor);
+  animation-name: secondaryAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  /* animation-fill-mode: forwards; */
+  animation-timing-function: ease-in;
+}
+
+@keyframes primaryAnimation {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+@keyframes secondaryAnimation {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 100vw;
+  }
+}
+
+/* showcase */
+.showcase {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+}
+
+.showcase h1 {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.showcase p {
+  font-size: 2rem;
+  margin: 0rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.grid-wrapper {
+  display: grid;
+}
+
+.grid-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #0C5AE8;
+  gap: 1em;
+
+}
+
+.grid-skills-items {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about {
+  background: #0C5AE8;
+  margin: 2vh 0vh;
+}
+
+img {
+  width: 100vw;
+}
+
+a > i {
+  color: #fff;
+  padding: 10px;
+}
+
+.identificationContainer {
+  margin: 2vh 0vh;
+  background: #0C5AE8;
+}

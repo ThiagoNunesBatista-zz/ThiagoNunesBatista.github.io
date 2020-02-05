@@ -27,8 +27,9 @@ ul {
 
 /* Variables */
 :root {
-  --primaryBoxColor: #0d9cff;
-  --secondaryBoxColor: #21faff;
+  --blueHover: #0d9cff;
+  --primaryBox: #21faff;
+  --secondaryBox: #ccc;
   --blueFont: #0000ff;
 }
 
@@ -59,7 +60,7 @@ header {
 }
 
 .primaryBox {
-  background: var(--primaryBoxColor);
+  background: var(--primaryBox);
   animation-name: primaryAnimation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -68,7 +69,7 @@ header {
 }
 
 .secondaryBox {
-  background: var(--secondaryBoxColor);
+  background: var(--secondaryBox);
   animation-name: secondaryAnimation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -89,9 +90,11 @@ header {
 @keyframes secondaryAnimation {
   from {
     width: 0%;
+    background: var(--secondaryBox);
   }
   to {
     width: 100%;
+    background: #000;
   }
 }
 
@@ -154,7 +157,7 @@ header {
 }
 
 .personalPhotoSection span {
-  color: var(--primaryBoxColor);
+  color: var(--primaryBox);
 }
 
 .personalPhotoSection i {
@@ -176,7 +179,7 @@ header {
 .portfolio {
   display: flex;
   flex-direction: column;
-  background: var(--primaryBoxColor);
+  background: var(--primaryBox);
   color: #fff;
   font-size: 1.5rem;
 }
@@ -208,7 +211,7 @@ header {
 }
 
 .courseCard:nth-child(odd) p {
-  background: var(--secondaryBoxColor);
+  background: var(--secondaryBox);
   color: #333;
 }
 

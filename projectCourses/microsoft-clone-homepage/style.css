@@ -1,0 +1,260 @@
+/* General Styling */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+
+/* Utilities */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.btn {
+  cursor: pointer;
+  background: #262626;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* navbar */
+.menuBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  z-index: 2;
+  display: none;
+}
+
+.menuBtn:hover {
+  opacity: 0.5;
+}
+
+#mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0px;
+  font-size: 13px;
+}
+
+#mainNav ul {
+  display: flex;
+}
+
+#mainNav ul li {
+  margin: 0px 10px;
+  border-bottom: 2px solid #fff;
+}
+
+#mainNav ul li:hover {
+  border-color: #262626;
+}
+
+#mainNav ul.mainMenu {
+  flex: 1;
+}
+
+#mainNav #microsoftLogo {
+  width: 110px;
+}
+
+/* Showcase */
+
+.showcase {
+  width: 100%;
+  height: 400px;
+  background: url('https://i.ibb.co/zGSDGCL/slide1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.showcase h2, .showcase p {
+  margin: 5px 0px;
+}
+
+.showcase button {
+  margin: 10px;
+}
+
+/* Cards */
+.cardWrapper {
+  margin-bottom: 50px;
+}
+.cardWrapper .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.cardWrapper img {
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card a {
+  text-transform: uppercase;
+  color: #0067b8;
+  font-weight: bold;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+/* Xbox */
+.xbox .container{
+  height: 350px;
+  width: 100%;
+  background: url('https://i.ibb.co/tBJGPD9/xbox.png'); 
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
+.xbox .text {
+  width: 50%;
+  padding: 50px 40px;
+}
+
+.xbox .text h2, .xbox .text h2 p {
+  margin: 10px 0px;
+}
+
+.xbox .text button {
+  margin: 20px 0px;
+}
+
+.carbon .container{
+  height: 350px;
+  width: 100%;
+  background: url('https://i.ibb.co/72cgtsz/carbon.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.carbonText {
+  width: 60%;
+  padding: 100px 25px;
+}
+
+.carbon .container h3,.carbon .container button a{
+  font-weight: bold;
+}
+
+.carbon .container button a {
+  font-size: 15px;
+}
+
+.carbon .container h3, .carbon .container p {
+  margin: 10px 0px;
+}
+
+.carbon .container button {
+  margin: 10px 0px;
+}
+
+.carbon .btn {
+  background: #fff;
+  color: #333;
+}
+
+/* Social Logos */
+.socialLogos .container{
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+
+.socialLogos .container a {
+  margin: 0px 10px;
+}
+
+/* Footer */
+
+.footer {
+  background: #f2f2f2;
+  padding: 50px 0px 0px;
+}
+
+.footer ul {
+  padding: 0px;
+  font-size: 14px;
+}
+
+.footer .container .grid1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 30px;
+  /* text-align: center; */
+}
+
+.footer .container .grid1 ul li{
+  margin: 5px 0px;
+}
+
+.footer .container .grid2 {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.footer .container .grid2 ul {
+  display: flex;
+}
+
+.footer .container .grid2 li {
+  margin: 0px 10px;
+}
+
+.footer .container .grid2 i {
+  color: #616161;
+}
+
+.footer .container .grid2 > div p {
+  display: inline;
+}
+
+.copyrightFooter {
+  text-align: center;
+  padding: 20px;
+}

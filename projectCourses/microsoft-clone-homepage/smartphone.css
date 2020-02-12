@@ -1,0 +1,69 @@
+/* Navbar */
+#mainNav ul.mainMenu{
+  width: 70% !important;
+}
+
+/* Showcase */
+.showcase {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+}
+
+/* Card */
+.cardWrapper .container {
+  grid-template-columns: 1fr;
+}
+
+.card {
+  margin: 15px 0px;
+}
+
+/* Xbox */
+.xbox .container {
+  height: 400px;
+  width: 90%;
+}
+
+.xbox .text {
+  width: 70%;
+}
+
+.xbox .text p {
+  display: none;
+}
+
+/* Carbon */
+.carbon .container{
+  width: 90%;
+}
+
+.carbonText {
+  width: 70%;
+  padding: 25px 25px;
+}
+
+/* Footer */
+.footer .container .grid1 {
+  grid-template-columns: 1fr;
+}
+
+.footerLinks {
+  margin-bottom: 30px;
+}
+
+.footer .container .grid2 {
+  grid-template-columns: 1fr;
+}
+
+.footer .container .grid2 > div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer .container .grid2 ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}

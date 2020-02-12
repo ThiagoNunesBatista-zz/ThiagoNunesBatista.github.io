@@ -1,0 +1,36 @@
+.menuBtn {
+  display: block;
+}
+
+#mainNav ul.mainMenu{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  width: 50%;
+  height: 100%;
+  opacity: 0.9;
+  padding: 50px 30px;
+  transform: translateX(-500px);
+  transition: transform 0.5s ease-in-out;
+}
+
+#mainNav .show {
+  transform: translateX(-20px) !important;
+}
+
+#mainNav ul.mainMenu li {
+  border-bottom: 2px dotted #ccc;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+#mainNav ul li:last-child {
+  border: none;
+}
+
+.rightMenu {
+  margin-right: 60px;
+}

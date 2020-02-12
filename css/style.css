@@ -31,6 +31,7 @@ ul {
   --primaryBox: #21faff;
   --secondaryBox: #ccc;
   --blueFont: #0000ff;
+  --darkColor: #333;
 }
 
 /* Utilities */
@@ -124,7 +125,7 @@ header {
 .personalPhotoSection {
   display: flex;
   height: 60rem;
-  background: #333;
+  background: var(--darkColor);
   width: 100%;
   color: #fff;
   font-size: 1.8rem;
@@ -156,7 +157,7 @@ header {
   padding: 1.5rem;
 }
 
-.personalPhotoSection span {
+span.blueSpan {
   color: var(--primaryBox);
 }
 
@@ -179,7 +180,7 @@ header {
 .portfolio {
   display: flex;
   flex-direction: column;
-  background: var(--primaryBox);
+  background: var(--darkColor);
   color: #fff;
   font-size: 1.5rem;
 }
@@ -212,7 +213,7 @@ header {
 
 .courseCard:nth-child(odd) p {
   background: var(--secondaryBox);
-  color: #333;
+  color: var(--darkColor);
 }
 
 .courseCard img {
@@ -240,14 +241,14 @@ header {
 
 .skillsLogos i {
   margin: 1.5rem;
-  color: #333;
+  color: var(--darkColor);
 }
 
 /* Footer */
 footer {
   width: 100%;
   overflow: auto;
-  background: #333;
+  background: var(--darkColor);
   color: #fff;
   padding: 1.5rem;
   font-size: 1.5rem;

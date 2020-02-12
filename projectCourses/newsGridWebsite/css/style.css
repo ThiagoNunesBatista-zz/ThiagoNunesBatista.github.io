@@ -1,0 +1,528 @@
+/* General Styles */
+:root {
+  --darkGray: #333;
+  --lightGray: #444444;
+  --orangeColor: #f99500;
+  --white: #fff;
+  --lightWhite: #f3f3f3;
+  --red: #c72727;
+  --iconColor: #777;
+  --maxWidth: 1100px;
+}
+
+span {
+  padding: 0.5rem;
+  border-radius: 5rem;
+  color: #fff;
+  display: inline-block;
+  margin: 0.5rem 0rem;
+}
+
+.entertainmentSpan {
+  background: #a66bbe;
+}
+
+.sportsSpan {
+  background: var(--orangeColor);
+}
+
+.techSpan {
+  background: #009cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--lightWhite);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Staatliches', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+i {
+  color: var(--iconColor);
+}
+
+/* Utilities */
+.container {
+  max-width: var(--maxWidth);
+  padding: 1.5rem 2.1rem;
+  margin: auto;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: none;
+}
+
+.currentPage {
+  background: var(--red);
+  color: var(--white);
+}
+
+.category {
+  --sportsColor: #a8967b;
+  --entColor: #a66bbe;
+  --techColor: #009cff;
+}
+
+.categorySports {
+  background: var(--sportsColor);
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: var(--white);
+}
+
+nav .container {
+  display: grid;
+  grid-template-areas: 'logo logo socialIcons list';
+  grid-gap: 1rem;
+}
+
+nav .container img {
+  grid-area: logo;
+  width: 18rem;
+  margin-right: 21.5rem;
+}
+nav .container .socialIcons {
+  grid-area: socialIcons;
+  margin: auto 0rem;
+  text-align: right;
+}
+
+.socialIcons a {
+  margin-right: 0.7rem;
+  font-size: 1rem;
+}
+
+.socialIcons i {
+  margin: auto 0;
+}
+
+nav .container ul {
+  grid-area: list;
+  margin: auto 0;
+}
+
+nav .container ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+nav .container ul li a {
+  padding: 0.95rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav .container ul li a:hover {
+  background: var(--lightGray);
+  color: var(--lightWhite);
+}
+
+/* Showcase */
+.showcase:before {
+  content: '';
+  background: url('../images/featured.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.showcase {
+  height: 41rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.showcase .container {
+  text-align: left;
+  color: var(--white);
+  height: 100%;
+}
+
+.showcase .container div {
+  padding-top: 5rem;
+  width: 45%;
+  height: 100%;
+}
+
+.showcase .container p {
+  font-size: 1.5rem;
+}
+
+.container h2 {
+  margin-top: 1.5rem;
+  font-size: 3.1rem;
+}
+
+.showcase .container div {
+  margin: auto 0rem;
+}
+
+.showcase .container .categorySports,
+.showcase .container p,
+.showcase .container h2 {
+  margin-bottom: 2.5rem;
+}
+
+.showcase .btn {
+  background: var(--red);
+  color: var(--white);
+  padding: 1.1rem 2.4rem;
+  font-size: 1.5rem;
+}
+
+/* Articles Picks */
+.articlesWrapper {
+  background: var(--lightWhite);
+  width: 100%;
+}
+
+.gridPicks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 1.4rem 0rem;
+}
+
+.gridPicks p,
+.gridPicks h4 {
+  font-size: 1.7rem;
+}
+
+.gridPicks h4,
+.gridPicks p {
+  margin: 1rem 0rem;
+}
+
+.firstTwoColumnsArticle {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  color: #333;
+}
+
+.firstTwoColumnsText {
+  margin: auto 0rem;
+}
+
+.gridPicks h3 {
+  font-size: 2rem;
+}
+
+.pickCamera {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gridPicks img {
+  height: 20rem;
+  width: 100%;
+}
+
+.pickItem {
+  padding: 1.5rem 1.5rem;
+  background: var(--white);
+}
+
+.pickItem h4 {
+  color: #000;
+}
+
+.pickRedBackground {
+  background: var(--red);
+  color: var(--white);
+}
+
+.pickItemOrangeBackground {
+  background: var(--orangeColor);
+  color: var(--white);
+}
+
+.pickItemDarkBackground {
+  background: var(--darkGray);
+  color: var(--white);
+}
+
+.pickItemDarkBackground h4,
+.pickRedBackground h4 {
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  background: var(--darkGray);
+  color: var(--white);
+  overflow: auto;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'logoArea emailNewsletter siteLinks joinClub'
+    'paragraph paragraph paragraph paragraph';
+  grid-gap: 5rem;
+  text-align: left;
+}
+
+.container p {
+  font-size: 1.5rem;
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.container .emailNewsletter input {
+  padding: 0.7rem 0rem;
+  margin: 1rem auto;
+}
+
+.container .emailNewsletter button {
+  background: var(--red);
+  border: none;
+  color: var(--white);
+  padding: 0.8rem 6rem;
+  width: 100%;
+}
+
+.siteLinks ul li {
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+}
+
+.container .joinClub h3 {
+  font-size: 2.3rem;
+}
+
+.joinClub p {
+  margin-bottom: 2.5rem;
+}
+
+.joinClub a {
+  color: var(--white);
+  background: var(--orangeColor);
+  padding: 1.3rem 2.5rem;
+  font-size: 1.5rem;
+}
+
+footer .container ul li {
+  border-bottom: 0.2rem dotted var(--lightGray);
+}
+
+.logoArea img {
+  width: 15rem;
+}
+
+.logoArea {
+  grid-area: logoArea;
+}
+
+.emailNewsletter {
+  grid-area: emailNewsletter;
+}
+
+.siteLinks {
+  grid-area: siteLinks;
+}
+
+.joinClub {
+  grid-area: joinClub;
+}
+
+footer .container > p {
+  background: var(--lightGray);
+  grid-area: paragraph;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* About Section */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 2.5rem;
+}
+
+.aboutGrid section {
+  background: var(--white);
+  padding: 1rem 2rem;
+}
+
+.aboutGrid h1 {
+  font-size: 4rem;
+}
+
+.aboutGrid h3 {
+  font-weight: bold;
+}
+
+.aboutGrid aside {
+  background: var(--red);
+  color: var(--white);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  height: 17rem;
+}
+
+.aboutGrid button {
+  width: 100%;
+  padding: 1rem 0rem;
+  margin: 1rem 0rem;
+}
+
+.aboutGrid .aboutText p {
+  margin-bottom: 2rem;
+}
+
+/* Novo Estilo */
+.articleGrid {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 3rem;
+}
+
+.articleGrid article,
+#categories {
+  background: var(--white);
+}
+
+.articleGrid article {
+  grid-row: 1 / span 3;
+}
+
+.articleGrid article img {
+  width: 100%;
+}
+
+/* Paste */
+.joinArticle .btn {
+  width: 100%;
+  padding: 1.1rem;
+  color: var(--white);
+  background: var(--darkGray);
+  font-size: 1.5rem;
+}
+
+.joinArticle {
+  padding: 1rem;
+}
+
+.joinArticle h3 {
+  font-size: 2rem;
+}
+
+.joinArticle p {
+  font-size: 1.3rem;
+}
+
+/* Zueira */
+.articleGrid article {
+  padding: 1.5rem;
+  background: var(--white);
+}
+
+.articleGrid h1 {
+  font-size: 3.5rem;
+}
+
+.writtenBy {
+  display: flex;
+  width: 100%;
+  background: var(--lightWhite);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.writtenBy p {
+  font-size: 1.2rem;
+}
+
+.fa-user {
+  color: #000;
+}
+
+.articleGrid article > p {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.articleGrid section nav h3 {
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.articleGrid section nav ul {
+  padding: 1rem 5rem 1rem 1.5rem;
+}
+
+.articleGrid section nav ul li {
+  font-size: 1.5rem;
+  border-bottom: 1px dotted #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.articleGrid section nav h3 {
+  font-size: 2rem;
+}
+
+#categories {
+  padding: 1rem 3rem;
+}
+
+#categories h2 {
+  font-size: 1.5rem;
+}
+
+#categories ul li {
+  font-size: 1.5rem;
+  border-bottom: 0.1rem dotted #333;
+  margin-bottom: 1rem;
+  padding-bottom: 0.7rem;
+}

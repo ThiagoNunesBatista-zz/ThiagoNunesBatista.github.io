@@ -1,0 +1,78 @@
+/* Utilities */
+.container {
+  padding: 1rem 2.5rem;
+}
+
+/* Navbar */
+nav .container {
+  display: grid;
+  grid-template-areas:
+    'logo'
+    'list';
+  grid-gap: 1.5rem;
+  text-align: center;
+  padding: 0rem 2rem 2rem;
+}
+
+nav .container img {
+  margin: 1rem auto;
+}
+
+nav .socialIcons {
+  display: none;
+}
+
+/* Showcase */
+
+.showcase {
+  height: 45rem;
+}
+
+.showcase .container div {
+  text-align: left;
+  width: 90%;
+}
+
+/* Articles */
+.gridPicks {
+  grid-template-columns: 1fr;
+}
+
+.firstTwoColumnsArticle {
+  grid-template-columns: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-gap: 2rem;
+}
+
+.pickCamera {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-template-columns: 1fr;
+}
+
+/* Footer */
+footer .container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'logoArea'
+    'emailNewsletter'
+    'siteLinks'
+    'joinClub'
+    'paragraph';
+
+  text-align: center;
+}
+
+/* About Section */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+}
+
+/* Article Section */
+.articleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}

@@ -1,0 +1,165 @@
+/* Import From Another Sources */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* General Styling */
+
+:root {
+  --primaryColor: #dffff6;
+  --primaryDarkColor: #24292e;
+  --secondaryDarkColor: #404448;
+  --tertiaryDarkColor: #24292e;
+  --whiteColor: #fff;
+  --primaryLightGray: #e1e4e8;
+  --secondaryLightGray: #6a6666;
+  --linkColor: #0366e1;
+  --maxWidth: 1280px;
+  --primaryFont: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--primaryFont);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* Utilities */
+
+.container {
+  width: 95%;
+  max-width: var(--maxWidth);
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.btn {
+  padding: 9px 20px;
+}
+
+.btnDark {
+  border: 1px solid var(--whiteColor);
+  background: var(--secondaryDarkColor);
+  color: var(--whiteColor);
+}
+
+
+/* Navbar styling */
+
+.navbar,
+.flexBlock1,
+.flexBlock2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primaryDarkColor);
+  padding: 10px 20px;
+}
+
+.navbar input {
+  background: var(--secondaryDarkColor);
+  border: none;
+  color: var(--whiteColor);
+  padding: 10px 20px;
+  margin: auto 10px;
+}
+
+
+/* Profile Area Styling */
+
+.profileArea {
+  display: hidden;
+}
+
+.repositoriesCard>h3 {
+  /* text-align: center; */
+  color: var(--secondaryDarkColor);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.profileArea img {
+  height: 300px;
+}
+
+.profileArea ul li {
+  margin-bottom: 10px;
+}
+
+.profileArea ul li h2 {
+  font-size: 25px;
+  color: var(--tertiaryDarkColor);
+}
+
+.profileArea ul li h3 {
+  color: var(--secondaryLightGray);
+  margin-bottom: 25px;
+}
+
+.profileArea ul li i {
+  color: var(--secondaryLightGray);
+}
+
+.profileCard {
+  width: 300px;
+}
+
+.profileArea>.container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+/* Repositories */
+
+.gridRepositories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.gridBox {
+  border: 1px solid var(--primaryLightGray);
+  width: 100%;
+  height: 125px;
+  padding: 20px 20px;
+}
+
+.gridBox p {
+  font-size: 12px;
+  color: var(--secondaryLightGray);
+  margin: 10px 0px;
+}
+
+.repositoriesCard nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repositoriesCard nav ul li {
+  font-size: 20px;
+  margin-right: 20px;
+  background: orange;
+  padding-bottom: 15px;
+}

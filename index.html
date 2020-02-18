@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,121 @@
   <meta name="author" content="Thiago Nunes Batista">
   <meta name="keywords" content="Thiago Nunes Batista, Web Developer, Brazil, JavaScript, GitHub">
   <meta name="description" content="Thiago Nunes Batista Website Portfolio.">
-  
+
   <title>Thiago Nunes Batista | Web Developer</title>
 
   <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
   <link rel="stylesheet" media="screen and (max-width: 768px) and (min-width:500px)" href="./css/tablet.css">
 </head>
+
 <body>
 
-<header>
-  <div class="box primaryBox"></div>
-  <div class="box secondaryBox"></div>
-  <div class="box primaryBox"></div>
-  <div class="box secondaryBox"></div>
-  <div class="box primaryBox"></div>
-</header>
+  <header>
+    <div class="box primaryBox"></div>
+    <div class="box secondaryBox"></div>
+    <div class="box primaryBox"></div>
+    <div class="box secondaryBox"></div>
+    <div class="box primaryBox"></div>
+  </header>
 
-<section class="showcase">
-  <h1>Hi, I'm Thiago Nunes Batista</h1>
-  <p>The One You Were Looking To Develop Your Web Applications</p>
-  <a class="btn" href="#personalPhotoSection">Know More About Me</a>
-</section>
+  <section class="showcase">
+    <h1>Hi, I'm Thiago Nunes Batista</h1>
+    <p>The One You Were Looking To Develop Your Web Applications</p>
+    <a class="btn" href="#personalPhotoSection">Know More About Me</a>
+  </section>
 
-<section id="personalPhotoSection" class="personalPhotoSection">
-  <div class="personalPhotoBackground"></div>
-  
-  <div class="personalPhotoText">
-    
-    <div>
-      <h3><span class="blueSpan">Who I</span> Am</h3>
-    
-      <p>I believe in constant self-improvement, where every day you are improving on something in your life. I have been studying web technologies for a while, especially Back End with NodeJS and now I am looking to get a job and eventually do some freelance works.</p>
+  <section id="personalPhotoSection" class="personalPhotoSection">
+    <div class="personalPhotoBackground"></div>
+
+    <div class="personalPhotoText">
+
+      <div>
+        <h3><span class="blueSpan">Who I</span> Am</h3>
+
+        <p>I believe in constant self-improvement, where every day you are improving on something in your life. I have been studying web technologies for a while, especially Back End with NodeJS and now I am looking to get a job and eventually do some freelance
+          works.
+        </p>
+      </div>
+
+      <div>
+        <h3><span class="blueSpan">What I</span> Like</h3>
+        <ul>
+          <li>Films/Series Based/Inspired on Real Facts</li>
+          <li>Financial Investments</li>
+          <li>Grêmio FBPA</li>
+          <li>Reading Habit</li>
+          <li>Web Technologies</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3><span class="blueSpan">Contact</span></h3>
+        <a href="https://www.linkedin.com/in/thiagonunesbatista/" target="_blank"><i
+            class="fab fa-linkedin fa-3x"></i></a>
+        <a href="https://github.com/ThiagoNunesBatista/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+      </div>
+
     </div>
+  </section>
 
-    <div>
-      <h3><span class="blueSpan">What I</span> Like</h3>
-      <ul>
-        <li>Films/Series Based/Inspired on Real Facts</li>
-        <li>Financial Investments</li>
-        <li>Grêmio FBPA</li>
-        <li>Reading Habit</li>
-        <li>Web Technologies</li>
-      </ul>
-    </div>
+  <div class="parallax"></div>
 
-    <div>
-      <h3><span class="blueSpan">Contact</span></h3>
-      <a href="https://www.linkedin.com/in/thiagonunesbatista/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-      <a href="https://github.com/ThiagoNunesBatista/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-    </div>
-    
-  </div>
-</section>
- 
-<div class="parallax"></div>
-
-<section class="portfolio">
-  <h2><span class="blueSpan">Portfolio</span> From Courses</h2>
-  <p>Thank You For Your Teaching, Brad Traversy, I Really Appreciate Your Work.</p>
+  <section class="portfolio">
+    <h2><span class="blueSpan">Portfolio</span> From Courses</h2>
+    <p>Thank You For Your Teaching, Brad Traversy, I Really Appreciate Your Work.</p>
 
     <div class="portfolioCardsGrid">
 
+      <div class="courseCard" onclick="openLink('./projectCourses/githubFinder')">
+        <img src="./images/githubPublicApiWebsite.png" alt="Website Screenshot">
+        <p>Search Profiles On GitHub Using Its Public Api.</p>
+      </div>
+
       <div class="courseCard" onclick="openLink('./projectCourses/microsoftCloneHomepage')">
-        <img src="./images/microsoftHomepageClone.png" alt="">
+        <img src="./images/microsoftHomepageClone.png" alt="Website Screenshot">
         <p>Microsoft Homepage Clone</p>
       </div>
 
       <div class="courseCard" onclick="openLink('./projectCourses/hotel')">
-        <img src="./images/projectCourse1.png" alt="">
+        <img src="./images/projectCourse1.png" alt="Website Screenshot">
         <p>Website For A Small Hotel.</p>
       </div>
-  
-    <div class="courseCard" onclick="openLink('./projectCourses/edgeLedger')">
-      <img src="./images/projectCourse2.png" alt="">
-      <p>Website For a Financial Company.</p>
+
+      <div class="courseCard" onclick="openLink('./projectCourses/edgeLedger')">
+        <img src="./images/projectCourse2.png" alt="Website Screenshot">
+        <p>Website For a Financial Company.</p>
+      </div>
+
+      <div class="courseCard" onclick="openLink('./projectCourses/newsGridWebsite')">
+        <img src="./images/newsGridWebsite.png" alt="Website Screenshot">
+        <p>A News Website</p>
+      </div>
+
+  </section>
+
+  <section class="skills">
+    <h3>Skills</h3>
+
+    <div class="skillsLogos">
+      <i class="fab fa-html5 fa-6x"></i>
+      <i class="fab fa-css3-alt fa-6x"></i>
+      <i class="fab fa-js fa-6x"></i>
+      <i class="fab fa-node fa-6x"></i>
+      <i class="fab fa-linux fa-6x"></i>
+      <i class="fas fa-database fa-6x"></i>
+      <i class="fab fa-git fa-6x"></i>
     </div>
 
-    <div class="courseCard" onclick="openLink('./projectCourses/newsGridWebsite')">
-      <img src="./images/newsGridWebsite.png" alt="">
-      <p>A News Website</p>
-    </div>
+  </section>
 
-</section>
+  <footer>
+    <p><span class="blueSpan">Thiago Nunes Batista, 2020.</span> The Site is Licensed Under MIT License. <span class="blueSpan"> Source code in my GitHub</span></p>
+  </footer>
 
-<section class="skills">
-  <h3>Skills</h3>
-
-  <div class="skillsLogos">
-    <i class="fab fa-html5 fa-6x"></i>
-    <i class="fab fa-css3-alt fa-6x"></i>
-    <i class="fab fa-js fa-6x"></i>
-    <i class="fab fa-node fa-6x"></i>
-    <i class="fab fa-linux fa-6x"></i>
-    <i class="fas fa-database fa-6x"></i>
-    <i class="fab fa-git fa-6x"></i>
-  </div>
-
-</section>
-
-<footer>
-  <p><span class="blueSpan">Thiago Nunes Batista, 2020.</span> The Site is Licensed Under MIT License. <span class="blueSpan"> Source code in my GitHub</span></p>
-</footer>
-
-<script src="./javascript/openLink.js"></script>
+  <script src="./javascript/openLink.js"></script>
 </body>
+
 </html>

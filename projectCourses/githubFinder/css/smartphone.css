@@ -1,0 +1,20 @@
+.flexBlock1 {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primaryDarkColor);
+  padding: 10px 0px;
+}
+
+.btn {
+  padding: 9px 20px;
+}
+
+.navbar input {
+  padding: 10px 10px;
+  margin: auto 10px;
+}

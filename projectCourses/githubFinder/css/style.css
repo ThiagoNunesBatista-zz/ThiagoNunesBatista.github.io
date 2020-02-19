@@ -130,7 +130,7 @@ ul {
 /* Profile Area Styling */
 
 .profileArea {
-  display: hidden;
+  visibility: hidden;
 }
 
 .repositoriesCard>h3 {

@@ -63,6 +63,23 @@ ul {
   background: rgba(255, 255, 255, 0.7);
 }
 
+.icon {
+  color: var(--whiteColor);
+  margin: 1rem;
+}
+
+.icon:hover {
+  color: var(--primaryColor);
+}
+
+.blueSpan {
+  color: var(--primaryColor);
+}
+
+.underlineSpan {
+  text-decoration: underline;
+}
+
 
 /* Header */
 
@@ -154,7 +171,7 @@ header {
 
 .personalPhotoSection {
   display: flex;
-  height: 60rem;
+  height: 65rem;
   background: var(--primaryDarkColor);
   width: 100%;
   color: var(--whiteColor);
@@ -167,48 +184,27 @@ header {
   background-position: center;
   flex: 1;
   align-items: center;
-  height: 100%;
   width: 100%;
 }
 
 .personalPhotoText {
   flex: 2;
-  padding: 5rem;
+  padding: 1rem;
   text-align: left;
   width: 100%;
   height: 100%;
 }
 
 .personalPhotoText h3 {
+  font-size: 2.5rem;
+}
+
+.personalPhotoText p {
   font-size: 2rem;
 }
 
 .personalPhotoText div {
   padding: 1.5rem;
-}
-
-span.blueSpan {
-  color: var(--primaryColor);
-}
-
-.personalPhotoSection i {
-  color: var(--whiteColor);
-}
-
-.personalPhotoSection i:hover {
-  color: var(--primaryColor);
-}
-
-
-/* Parallax */
-
-.parallax {
-  background-image: url('../images/close-up-of-blue-paint-323933.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 75rem;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 
@@ -217,72 +213,47 @@ span.blueSpan {
 .portfolio {
   display: flex;
   flex-direction: column;
-  background: var(--primaryDarkColor);
-  color: var(--whiteColor);
+  background: var(--whiteColor);
+  color: var(--primaryDarkColor);
+  padding: 3rem 0rem 0rem;
   font-size: 1.5rem;
 }
 
-.portfolio h2,
-.portfolio p {
-  padding: 1rem 1.5rem;
+.portfolio h3,
+.portfolio>p {
+  font-size: 2.5rem;
+  margin: 1rem auto;
+}
+
+.portfolio>p {
+  font-size: 2rem;
 }
 
 .portfolioCardsGrid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .courseCard {
-  padding: 1rem;
+  margin-bottom: 5rem;
 }
 
-.courseCard:hover {
+.courseCard img:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .courseCard p {
-  padding: 1.5rem;
-}
-
-.courseCard:nth-child(even) p {
-  background: #083ba2;
-}
-
-.courseCard:nth-child(odd) p {
-  background: var(--primaryLightGray);
-  color: var(--primaryDarkColor);
+  margin: 2rem auto;
+  width: 75%;
+  text-align: justify;
+  font-size: 1.8rem;
 }
 
 .courseCard img {
-  width: 100%;
-  height: 23rem;
-}
-
-
-/* Skills Section */
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  border: 2px solid var(--primaryColor);
-}
-
-.skills h3 {
-  font-size: 2rem;
-}
-
-.skillsLogos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.skillsLogos i {
-  margin: 1.5rem;
-  color: var(--primaryDarkColor);
+  width: 75%;
+  height: 30rem;
+  transition: transform 0.2s;
 }
 
 
@@ -295,4 +266,9 @@ footer {
   color: var(--whiteColor);
   padding: 1.5rem;
   font-size: 1.5rem;
+}
+
+footer a {
+  color: var(--primaryColor);
+  text-decoration: underline;
 }

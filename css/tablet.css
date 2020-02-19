@@ -2,3 +2,14 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
+
+.personalPhotoBackground {
+  background: url('../images/thiago-photo.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  top: 100px;
+  flex: 1;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

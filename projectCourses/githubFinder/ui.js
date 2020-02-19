@@ -1,7 +1,14 @@
 class UI {
   showProfile(userProfile) {
     const containerProfile = document.getElementById('containerProfile')
+    const errorArea = document.getElementsByClassName('errorArea')[0]
+    const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
+    const footer = document.getElementsByTagName('footer')[0]
+
     containerProfile.style.display = 'grid'
+    errorArea.style.display = 'none'
+    mainTextContainer.style.display = 'none'
+    footer.style.position = 'static'
 
     containerProfile.innerHTML += `
     <div class="profileCard">
@@ -28,7 +35,14 @@ class UI {
 
   async showRepositories(userProfile) {
     const containerProfile = document.getElementById('containerProfile')
+    const errorArea = document.getElementsByClassName('errorArea')[0]
+    const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
+    const footer = document.getElementsByTagName('footer')[0]
+
     containerProfile.style.display = 'grid'
+    errorArea.style.display = 'none'
+    mainTextContainer.style.display = 'none'
+    footer.style.position = 'static'
 
     const repositories = document.createElement('div')
     repositories.classList = 'gridRepositories'
@@ -52,5 +66,21 @@ class UI {
     const insertRepositories = document.getElementsByClassName('repositoriesCard')[0]
     insertRepositories.appendChild(repositories)
 
+  }
+
+  async showError(message) {
+    const containerProfile = document.getElementById('containerProfile')
+    const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
+    const errorArea = document.getElementsByClassName('errorArea')[0]
+    const footer = document.getElementsByTagName('footer')[0]
+
+    containerProfile.style.display = 'none'
+    mainTextContainer.style.display = 'none'
+    errorArea.style.display = 'flex'
+    footer.style.position = 'absolute'
+
+    errorArea.innerHTML = `
+    <p>Error: ${message}</p>
+    `
   }
 }

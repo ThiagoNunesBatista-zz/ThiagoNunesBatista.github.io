@@ -10,6 +10,7 @@
   --secondaryDarkColor: #404448;
   --tertiaryDarkColor: #24292e;
   --whiteColor: #fff;
+  --redColor: #e8180c;
   --primaryLightGray: #e1e4e8;
   --secondaryLightGray: #6a6666;
   --linkColor: #0366e1;
@@ -19,6 +20,7 @@
 
 body {
   font-family: var(--primaryFont);
+  line-height: 1.5;
 }
 
 * {
@@ -46,6 +48,10 @@ ul {
   padding: 20px 0px;
 }
 
+.underlineText {
+  text-decoration: underline;
+}
+
 .btn {
   padding: 9px 20px;
 }
@@ -54,6 +60,43 @@ ul {
   border: 1px solid var(--whiteColor);
   background: var(--secondaryDarkColor);
   color: var(--whiteColor);
+}
+
+
+/* Error Area */
+
+.errorArea {
+  display: none;
+  background: var(--redColor);
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorArea p {
+  color: var(--whiteColor);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* Main text Area */
+
+.mainTextContainer {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  padding: 0px 75px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryDarkColor);
 }
 
 
@@ -162,4 +205,17 @@ ul {
   margin-right: 20px;
   background: orange;
   padding-bottom: 15px;
+}
+
+
+/* Footer Styling */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--primaryDarkColor);
+  color: var(--whiteColor);
+  text-align: center;
+  padding: 15px 10px;
 }

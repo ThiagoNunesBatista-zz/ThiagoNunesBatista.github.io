@@ -10,22 +10,28 @@ btnSearchUser.addEventListener('click', searchUser)
 
 // Create Functions
 function searchUser(e) {
-  const inputValue = userInput.value.trim()
+  const inputValue = userInput.value
 
-  Api.get(inputValue)
-    .then(responseUser => {
-      if (responseUser.message !== 'Not Found') {
-        Api.getRepositories(inputValue)
-          .then(responseRepository => {
-            Ui.showProfile(responseUser)
-            Ui.showRepositories(responseRepository)
-          })
-      } else {
-        console.log(responseUser.message);
-      }
+  if (inputValue !== '') {
+    Api.get(inputValue)
+      .then(responseUser => {
+        if (responseUser.message !== 'Not Found') {
+          Api.getRepositories(inputValue)
+            .then(responseRepository => {
+              Ui.showProfile(responseUser)
+              Ui.showRepositories(responseRepository)
+            })
+        } else {
+          Ui.showError(responseUser.message)
+        }
 
-    })
-    .catch(error => {
-      console.error({ success: false, message: error })
-    })
+      })
+      .catch(error => {
+        console.error({ success: false, message: error })
+      })
+  } else {
+    Ui.showError('Username Must Not Be Empty')
+  }
+
+
 }

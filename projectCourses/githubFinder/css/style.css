@@ -130,7 +130,16 @@ ul {
 /* Profile Area Styling */
 
 .profileArea {
-  visibility: hidden;
+  display: hidden;
+}
+
+#loadMoreBtn {
+  margin: 10px auto;
+  width: 300px;
+}
+
+.repositoriesCard {
+  text-align: center;
 }
 
 .repositoriesCard>h3 {

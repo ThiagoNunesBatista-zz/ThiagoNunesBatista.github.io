@@ -16,7 +16,7 @@ function searchUser(e) {
     Api.get(inputValue)
       .then(responseUser => {
         if (responseUser.message !== 'Not Found') {
-          Api.getRepositories(inputValue)
+          Api.getRepositories(inputValue, 0)
             .then(responseRepository => {
               Ui.showProfile(responseUser)
               Ui.showRepositories(responseRepository)
@@ -34,4 +34,15 @@ function searchUser(e) {
   }
 
 
+}
+
+function loadMore() {
+  const inputValue = userInput.value
+  Api.getRepositories(inputValue)
+    .then(response => {
+      Ui.showMoreRepositories(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
 }

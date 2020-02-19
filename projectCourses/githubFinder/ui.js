@@ -1,17 +1,24 @@
 class UI {
+
+  constructor(userRepos, controlUserRepos) {
+    this.userRepos = userRepos
+    this.controlUserRepos = this.controlUserRepos
+  }
+
   showProfile(userProfile) {
     const containerProfile = document.getElementById('containerProfile')
     const errorArea = document.getElementsByClassName('errorArea')[0]
     const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
     const footer = document.getElementsByTagName('footer')[0]
-
+    const profileCard = document.getElementsByClassName('profileCard')[0]
+    this.userRepos = userProfile.public_repos
+    this.controlUserRepos = 0
     containerProfile.style.display = 'grid'
     errorArea.style.display = 'none'
     mainTextContainer.style.display = 'none'
     footer.style.position = 'static'
 
-    containerProfile.innerHTML += `
-    <div class="profileCard">
+    profileCard.innerHTML = `
       <img src="${userProfile.avatar_url}" alt="Profile Photo" id="profileImg">
 
       <ul>
@@ -29,7 +36,6 @@ class UI {
         </li>
         <li><i class="fas fa-link"></i> <a href="${userProfile.blog}" target="_blank">${userProfile.blog}</a></li>
       </ul>
-    </div>
     `
   }
 
@@ -38,7 +44,7 @@ class UI {
       const errorArea = document.getElementsByClassName('errorArea')[0]
       const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
       const footer = document.getElementsByTagName('footer')[0]
-
+      this.controlUserRepos += 4
       containerProfile.style.display = 'grid'
       errorArea.style.display = 'none'
       mainTextContainer.style.display = 'none'
@@ -49,23 +55,52 @@ class UI {
 
       containerProfile.innerHTML += `
     <div class="repositoriesCard">
-    <h3>Repositories</h3>
   </div>
+    `
+
+      repositories.innerHTML += `
     `
 
       await userProfile.forEach((currentObject) => {
             repositories.innerHTML += `
       <div class="gridBox">
         <i class="far fa-bookmark"></i><a href="${currentObject.html_url}" target="_blank"> ${currentObject.name}</a>
-        ${ currentObject.description !== null ? `<p>${currentObject.description}</p>`: ''}
+        ${ currentObject.description !== null ? `<p>${currentObject.description}</p>` : ''}
       </div>
       `
     })
 
-
     const insertRepositories = document.getElementsByClassName('repositoriesCard')[0]
+    insertRepositories.innerHTML = ''
+    insertRepositories.innerHTML += `
+    <h3>Repositories</h3>
+    `
     insertRepositories.appendChild(repositories)
 
+    if (this.controlUserRepos < this.userRepos) {
+      insertRepositories.innerHTML += `
+      <button class="btn btnDark" onclick="loadMore()" id="loadMoreBtn">Load More</button>
+      `
+    }
+  }
+
+  async showMoreRepositories(response) {
+    const repositories = document.getElementsByClassName('gridRepositories')[0]
+
+    response.forEach(currentObject => {
+      repositories.innerHTML += `
+        <div class="gridBox">
+        <i class="far fa-bookmark"></i><a href="${currentObject.html_url}" target="_blank"> ${currentObject.name}</a>
+        ${ currentObject.description !== null ? `<p>${currentObject.description}</p>` : ''}
+      </div>
+      `
+    })
+    this.controlUserRepos += 4
+
+    if (this.controlUserRepos >= this.userRepos) {
+      const loadMoreBtn = document.getElementById('loadMoreBtn')
+      loadMoreBtn.style.display = 'none'
+    }
   }
 
   async showError(message) {

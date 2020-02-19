@@ -1,4 +1,5 @@
 /* Who I am */
+
 .personalPhotoSection {
   flex-direction: column;
   align-items: center;
@@ -10,9 +11,16 @@
   padding: 2rem;
 }
 
+
 /* Course Portfolio */
+
 .portfolioCardsGrid {
   display: grid;
   grid-template-columns: repeat(1, auto);
 }
 
+.courseCard {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 50px;
+}

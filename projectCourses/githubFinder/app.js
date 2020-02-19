@@ -22,7 +22,7 @@ function searchUser(e) {
               Ui.showRepositories(responseRepository)
             })
         } else {
-          Ui.showError(responseUser.message)
+          Ui.showError('User Not Found')
         }
 
       })

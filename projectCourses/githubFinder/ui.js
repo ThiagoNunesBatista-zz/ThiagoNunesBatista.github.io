@@ -34,30 +34,30 @@ class UI {
   }
 
   async showRepositories(userProfile) {
-    const containerProfile = document.getElementById('containerProfile')
-    const errorArea = document.getElementsByClassName('errorArea')[0]
-    const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
-    const footer = document.getElementsByTagName('footer')[0]
+      const containerProfile = document.getElementById('containerProfile')
+      const errorArea = document.getElementsByClassName('errorArea')[0]
+      const mainTextContainer = document.getElementsByClassName('mainTextContainer')[0]
+      const footer = document.getElementsByTagName('footer')[0]
 
-    containerProfile.style.display = 'grid'
-    errorArea.style.display = 'none'
-    mainTextContainer.style.display = 'none'
-    footer.style.position = 'static'
+      containerProfile.style.display = 'grid'
+      errorArea.style.display = 'none'
+      mainTextContainer.style.display = 'none'
+      footer.style.position = 'static'
 
-    const repositories = document.createElement('div')
-    repositories.classList = 'gridRepositories'
+      const repositories = document.createElement('div')
+      repositories.classList = 'gridRepositories'
 
-    containerProfile.innerHTML += `
+      containerProfile.innerHTML += `
     <div class="repositoriesCard">
     <h3>Repositories</h3>
   </div>
     `
 
-    await userProfile.forEach((currentObject) => {
-      repositories.innerHTML += `
+      await userProfile.forEach((currentObject) => {
+            repositories.innerHTML += `
       <div class="gridBox">
-        <i class="far fa-bookmark"></i><a href="${currentObject.url}"> ${currentObject.name}</a>
-        <p>${currentObject.description}</p>
+        <i class="far fa-bookmark"></i><a href="${currentObject.html_url}" target="_blank"> ${currentObject.name}</a>
+        ${ currentObject.description !== null ? `<p>${currentObject.description}</p>`: ''}
       </div>
       `
     })
